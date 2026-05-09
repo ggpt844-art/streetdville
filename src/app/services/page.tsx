@@ -31,22 +31,22 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   return (
-    <main id="main" className="relative bg-[#fdfaf4] text-[#1a1a1a]">
+    <main id="main" className="relative bg-[#ffffff] text-[#1a1a1a]">
       <FloatingNav phone={CLINIC.phone} />
       <StickyMobileCTA phone={CLINIC.phone} phoneDisplay={CLINIC.phoneDisplay} />
 
       {/* Header band */}
-      <section className="relative bg-[#fdfaf4] overflow-hidden">
-        <div aria-hidden className="drift-x pointer-events-none absolute -top-40 -right-40 w-[420px] h-[420px] rounded-full bg-[#b73026] opacity-[0.07] blur-[120px]" />
+      <section className="relative bg-[#ffffff] overflow-hidden">
+        <div aria-hidden className="drift-x pointer-events-none absolute -top-40 -right-40 w-[420px] h-[420px] rounded-full bg-[#7d7635] opacity-[0.07] blur-[120px]" />
         <SiteHeader />
         <div className="relative px-5 pt-6 pb-14 max-w-3xl mx-auto text-center">
           <Reveal>
-            <p className="text-[#b73026] text-[11px] tracking-[0.25em] uppercase font-bold mb-3">
+            <p className="text-[#7d7635] text-[11px] tracking-[0.25em] uppercase font-bold mb-3">
               Services &amp; Treatments
             </p>
             <h1 className="font-display text-[44px] sm:text-[60px] font-black leading-[1.02] tracking-tight">
               Gentle, scientific care for the{" "}
-              <span className="text-[#b73026] italic">whole family.</span>
+              <span className="text-[#7d7635] italic">whole family.</span>
             </h1>
             <p className="mt-5 text-[#2c2c2c] text-[16px] sm:text-[17px] leading-relaxed max-w-xl mx-auto">
               From young families to seniors, athletes to desk workers — every
@@ -56,7 +56,7 @@ export default function ServicesPage() {
             <div className="mt-7">
               <Link
                 href="/#book"
-                className="inline-flex items-center gap-2 rounded-full bg-[#b73026] text-white px-7 py-3.5 font-bold text-sm hover:bg-[#8e1f17] transition-colors shadow-md shadow-[#b73026]/20"
+                className="inline-flex items-center gap-2 rounded-full bg-[#7d7635] text-white px-7 py-3.5 font-bold text-sm hover:bg-[#5e5a25] transition-colors shadow-md shadow-[#7d7635]/20"
               >
                 <Calendar size={16} />
                 Book a Free Consultation
@@ -77,11 +77,11 @@ export default function ServicesPage() {
           </Reveal>
           <Reveal delay={150}>
             <div>
-              <p className="text-[#b73026] text-[11px] tracking-[0.25em] uppercase font-bold mb-3">
+              <p className="text-[#7d7635] text-[11px] tracking-[0.25em] uppercase font-bold mb-3">
                 What We Treat
               </p>
               <h2 className="font-display text-[32px] sm:text-[40px] font-black leading-tight tracking-tight">
-                Four areas, <span className="text-[#b73026] italic">one focused approach</span>.
+                Four areas, <span className="text-[#7d7635] italic">one focused approach</span>.
               </h2>
               <p className="mt-4 text-[#2c2c2c] text-[15.5px] leading-relaxed">
                 Most pain we see comes from one of four regions of the spine.
@@ -97,10 +97,10 @@ export default function ServicesPage() {
                 ].map((it) => (
                   <li
                     key={it.area}
-                    className="rounded-2xl bg-[#fdfaf4] ring-1 ring-black/5 p-4"
+                    className="rounded-2xl bg-[#ffffff] ring-1 ring-black/5 p-4"
                   >
                     <div className="flex items-center gap-2">
-                      <Check size={16} className="text-[#b73026]" strokeWidth={2.5} />
+                      <Check size={16} className="text-[#7d7635]" strokeWidth={2.5} />
                       <span className="font-bold text-[15px]">{it.area}</span>
                     </div>
                     <p className="mt-1 text-[#2c2c2c] text-[13px] leading-relaxed">
@@ -115,10 +115,10 @@ export default function ServicesPage() {
       </section>
 
       {/* Core services — 3 big cards */}
-      <section id="services" className="px-5 py-20 bg-[#fdfaf4]">
+      <section id="services" className="px-5 py-20 bg-[#ffffff]">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <Reveal>
-            <p className="text-[#b73026] text-[11px] tracking-[0.25em] uppercase font-bold mb-3">
+            <p className="text-[#7d7635] text-[11px] tracking-[0.25em] uppercase font-bold mb-3">
               Our Services
             </p>
             <h2 className="font-display text-[36px] sm:text-[44px] font-black leading-[1.05] tracking-tight">
@@ -135,7 +135,7 @@ export default function ServicesPage() {
           {services.map((s, i) => (
             <Reveal key={s.title} delay={i * 120} as="li">
               <article className="group rounded-3xl overflow-hidden bg-white ring-1 ring-black/5 shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-                <div className="relative aspect-[4/3] overflow-hidden bg-[#f5efe2]">
+                <div className="relative aspect-[4/3] overflow-hidden bg-[#f4f1ea]">
                   <Image
                     src={s.image}
                     alt={s.title}
@@ -155,7 +155,7 @@ export default function ServicesPage() {
                   </p>
                   <Link
                     href="/#book"
-                    className="mt-5 inline-flex items-center gap-1.5 text-[#b73026] font-bold text-sm hover:gap-2 transition-all"
+                    className="mt-5 inline-flex items-center gap-1.5 text-[#7d7635] font-bold text-sm hover:gap-2 transition-all"
                   >
                     Book a consultation <ChevronRight size={16} />
                   </Link>
@@ -169,15 +169,15 @@ export default function ServicesPage() {
       {/* Treatments grid */}
       <section
         id="treatments"
-        className="px-5 py-20 bg-[#f5efe2] border-y border-black/5"
+        className="px-5 py-20 bg-[#f4f1ea] border-y border-black/5"
       >
         <div className="max-w-3xl mx-auto text-center mb-12">
           <Reveal>
-            <p className="text-[#b73026] text-[11px] tracking-[0.25em] uppercase font-bold mb-3">
+            <p className="text-[#7d7635] text-[11px] tracking-[0.25em] uppercase font-bold mb-3">
               Conditions We Treat
             </p>
             <h2 className="font-display text-[34px] sm:text-[40px] font-black leading-[1.05] tracking-tight">
-              Common issues <span className="text-[#b73026] italic">we resolve</span>.
+              Common issues <span className="text-[#7d7635] italic">we resolve</span>.
             </h2>
           </Reveal>
         </div>
@@ -186,7 +186,7 @@ export default function ServicesPage() {
             <Reveal key={t.title} delay={i * 80} as="li">
               <div className="rounded-2xl p-6 bg-white ring-1 ring-black/5 h-full hover:shadow-md transition-shadow">
                 <div className="flex items-center gap-2 mb-2">
-                  <Sparkles size={16} className="text-[#b73026]" />
+                  <Sparkles size={16} className="text-[#7d7635]" />
                   <h3 className="font-bold text-[16.5px] leading-tight">
                     {t.title}
                   </h3>
@@ -205,11 +205,11 @@ export default function ServicesPage() {
         <div className="max-w-2xl mx-auto">
           <Reveal>
             <div className="text-center mb-10">
-              <p className="text-[#b73026] text-[11px] tracking-[0.25em] uppercase font-bold mb-3">
+              <p className="text-[#7d7635] text-[11px] tracking-[0.25em] uppercase font-bold mb-3">
                 Free for New Patients
               </p>
               <h2 className="font-display text-[32px] sm:text-[40px] font-black leading-tight tracking-tight">
-                Inside your <span className="text-[#b73026] italic">free consultation</span>.
+                Inside your <span className="text-[#7d7635] italic">free consultation</span>.
               </h2>
               <p className="mt-4 text-[#2c2c2c] text-[15px] leading-relaxed">
                 A no-pressure phone consultation to see if chiropractic care is
@@ -220,8 +220,8 @@ export default function ServicesPage() {
           <ul className="grid sm:grid-cols-3 gap-3">
             {valueStack.map((v, i) => (
               <Reveal key={v.label} delay={i * 100} as="li">
-                <div className="rounded-2xl bg-[#fdfaf4] ring-1 ring-black/5 p-5 text-center h-full flex flex-col items-center">
-                  <span className="grid place-items-center w-11 h-11 mb-3 rounded-full bg-[#b73026]/10 text-[#b73026]">
+                <div className="rounded-2xl bg-[#ffffff] ring-1 ring-black/5 p-5 text-center h-full flex flex-col items-center">
+                  <span className="grid place-items-center w-11 h-11 mb-3 rounded-full bg-[#7d7635]/10 text-[#7d7635]">
                     <Check size={20} strokeWidth={2.5} />
                   </span>
                   <h3 className="font-bold text-[15px] text-[#1a1a1a] leading-snug">
@@ -238,7 +238,7 @@ export default function ServicesPage() {
             <div className="mt-8 text-center">
               <Link
                 href="/#book"
-                className="inline-flex items-center gap-2 rounded-full bg-[#b73026] text-white px-7 py-4 font-bold text-[15px] hover:bg-[#8e1f17] transition-colors shadow-lg shadow-[#b73026]/20"
+                className="inline-flex items-center gap-2 rounded-full bg-[#7d7635] text-white px-7 py-4 font-bold text-[15px] hover:bg-[#5e5a25] transition-colors shadow-lg shadow-[#7d7635]/20"
               >
                 <Calendar size={16} />
                 Claim Your Free Consultation
@@ -251,7 +251,7 @@ export default function ServicesPage() {
       {/* Insurance */}
       <section
         id="insurance"
-        className="px-5 py-20 bg-[#f5efe2]"
+        className="px-5 py-20 bg-[#f4f1ea]"
       >
         <div className="max-w-3xl mx-auto">
           <Reveal>
@@ -277,7 +277,7 @@ export default function ServicesPage() {
             chiropractic care.{" "}
             <a
               href={`tel:${CLINIC.phone}`}
-              className="text-[#b73026] font-semibold hover:underline"
+              className="text-[#7d7635] font-semibold hover:underline"
             >
               Call us
             </a>{" "}
@@ -299,7 +299,7 @@ export default function ServicesPage() {
           <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
             <Link
               href="/#book"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#b73026] text-white px-7 py-4 font-bold text-[15px] hover:bg-[#8e1f17] transition-colors shadow-lg shadow-[#b73026]/20"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#7d7635] text-white px-7 py-4 font-bold text-[15px] hover:bg-[#5e5a25] transition-colors shadow-lg shadow-[#7d7635]/20"
             >
               <Calendar size={16} />
               Book Free Consultation

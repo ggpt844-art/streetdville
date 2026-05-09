@@ -19,11 +19,11 @@ export default function FAQ({ items }: Props) {
         return (
           <div
             key={item.q}
-            className="rounded-2xl border border-[#1a1a1a]/10 bg-white overflow-hidden hover:border-[#b73026]/30 transition-colors"
+            className="rounded-2xl border border-[#1a1a1a]/10 bg-white overflow-hidden hover:border-[#7d7635]/30 transition-colors"
           >
             <button
               onClick={() => setOpen(isOpen ? null : idx)}
-              className="w-full flex items-center justify-between gap-4 px-5 py-5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f2a93b] focus-visible:ring-inset"
+              className="w-full flex items-center justify-between gap-4 px-5 py-5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c9a951] focus-visible:ring-inset"
               aria-expanded={isOpen}
             >
               <span className="text-[17px] md:text-[18px] font-semibold text-[#1a1a1a] leading-snug">
@@ -31,7 +31,7 @@ export default function FAQ({ items }: Props) {
               </span>
               <span
                 className={`shrink-0 grid place-items-center w-9 h-9 rounded-full transition-colors ${
-                  isOpen ? "bg-[#b73026] text-white" : "bg-[#f5efe2] text-[#1a1a1a]"
+                  isOpen ? "bg-[#7d7635] text-white" : "bg-[#f4f1ea] text-[#1a1a1a]"
                 }`}
                 aria-hidden
               >

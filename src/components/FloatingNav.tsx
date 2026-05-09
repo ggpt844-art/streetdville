@@ -41,27 +41,27 @@ export default function FloatingNav({ phone }: Props) {
           <span className="text-[14px] font-bold tracking-tight">Home</span>
         </Link>
         <nav className="hidden md:flex items-center gap-5 text-[13.5px] font-semibold text-[#1a1a1a]/75 px-2">
-          <Link href="/about" className="hover:text-[#b73026] transition-colors">
+          <Link href="/about" className="hover:text-[#7d7635] transition-colors">
             About
           </Link>
-          <Link href="/services" className="hover:text-[#b73026] transition-colors">
+          <Link href="/services" className="hover:text-[#7d7635] transition-colors">
             Services
           </Link>
-          <Link href="/#reviews" className="hover:text-[#b73026] transition-colors">
+          <Link href="/#reviews" className="hover:text-[#7d7635] transition-colors">
             Reviews
           </Link>
         </nav>
         <div className="flex items-center gap-2">
           <Link
             href="/#book"
-            className="rounded-full border border-[#b73026] text-[#b73026] px-3.5 py-1.5 text-[13px] font-semibold hover:bg-[#b73026]/5 transition-colors flex items-center gap-1.5"
+            className="rounded-full border border-[#7d7635] text-[#7d7635] px-3.5 py-1.5 text-[13px] font-semibold hover:bg-[#7d7635]/5 transition-colors flex items-center gap-1.5"
           >
             <Calendar size={13} />
             Book
           </Link>
           <a
             href={`tel:${phone}`}
-            className="rounded-full bg-[#b73026] text-white px-3.5 py-1.5 text-[13px] font-bold hover:bg-[#8e1f17] transition-colors flex items-center gap-1.5"
+            className="rounded-full bg-[#7d7635] text-white px-3.5 py-1.5 text-[13px] font-bold hover:bg-[#5e5a25] transition-colors flex items-center gap-1.5"
             aria-label="Call Streetsville Chiropractic"
           >
             <Phone size={13} />

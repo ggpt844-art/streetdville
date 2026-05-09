@@ -7,8 +7,8 @@ type Props = {
 };
 
 const palettes = {
-  gold: { ring: "#f2a93b", bg: "#fff8ec", ink: "#7a4a00", accent: "#b06a00" },
-  red: { ring: "#b73026", bg: "#fff1f0", ink: "#8e1f17", accent: "#b73026" },
+  gold: { ring: "#c9a951", bg: "#fff8ec", ink: "#7a4a00", accent: "#b06a00" },
+  red: { ring: "#7d7635", bg: "#fff1f0", ink: "#5e5a25", accent: "#7d7635" },
   sage: { ring: "#7d9070", bg: "#f1f4ed", ink: "#3f5236", accent: "#5a7050" },
 };
 

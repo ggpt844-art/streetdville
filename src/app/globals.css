@@ -5,18 +5,21 @@
   --font-serif: var(--font-fraunces), ui-serif, Georgia, "Times New Roman", serif;
   --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  /* Streetsville Chiropractic brand palette */
-  --color-brand-red: #b73026;
-  --color-brand-red-dark: #8e1f17;
-  --color-brand-red-soft: #e85a4f;
-  --color-brand-yellow: #f2a93b;
-  --color-brand-yellow-dark: #d8902a;
+  /* Streetsville Chiropractic brand palette
+     Editorial — olive / gold / charcoal on warm white. */
+  --color-brand-olive: #7d7635;
+  --color-brand-olive-dark: #5e5a25;
+  --color-brand-olive-soft: #a09956;
+  --color-brand-gold: #c9a951;
+  --color-brand-gold-dark: #a8862c;
   --color-brand-sage: #7d9070;
   --color-brand-sage-soft: #c5d0bc;
-  --color-cream: #fdfaf4;
-  --color-cream-soft: #f5efe2;
+  --color-charcoal: #4a4842;
+  --color-charcoal-dark: #2e2c27;
+  --color-cream: #ffffff;
+  --color-cream-soft: #f4f1ea;
   --color-ink: #1a1a1a;
-  --color-ink-soft: #4a4a4a;
+  --color-ink-soft: #54504a;
 }
 
 html,
@@ -68,13 +71,13 @@ body {
 
 /* Visible focus rings everywhere — accessibility */
 :focus-visible {
-  outline: 2px solid var(--color-brand-red);
+  outline: 2px solid var(--color-brand-olive);
   outline-offset: 2px;
   border-radius: 6px;
 }
 button:focus-visible,
 a:focus-visible {
-  outline: 2px solid var(--color-brand-red);
+  outline: 2px solid var(--color-brand-olive);
   outline-offset: 3px;
 }
 
@@ -110,9 +113,7 @@ a:focus-visible {
   pointer-events: none;
 }
 
-/* Subtle drift on hero blur orbs.
-   Slow + small displacement so it never reads like motion or causes vestibular issues.
-   Disabled completely under `prefers-reduced-motion`. */
+/* Subtle drift on hero blur orbs */
 @keyframes drift-soft-x {
   0%, 100% { transform: translate3d(0, 0, 0); }
   50% { transform: translate3d(20px, -12px, 0); }
@@ -124,8 +125,7 @@ a:focus-visible {
 .drift-x { animation: drift-soft-x 24s ease-in-out infinite; }
 .drift-y { animation: drift-soft-y 30s ease-in-out infinite; }
 
-/* Award badge shimmer — desktop hover only.
-   Touch devices skip it entirely (no hover state). */
+/* Award badge shimmer — desktop hover only */
 @media (hover: hover) and (pointer: fine) {
   .award-shimmer::before {
     content: "";
@@ -147,4 +147,10 @@ a:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .drift-x, .drift-y { animation: none !important; }
   .award-shimmer::before { display: none !important; }
+}
+
+/* Editorial top utility ribbon (matches live site's promo bar) */
+.utility-ribbon {
+  background: var(--color-brand-olive);
+  color: white;
 }

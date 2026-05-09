@@ -24,29 +24,29 @@ export const metadata: Metadata = {
 // Avatar tints rotate so each doctor gets a distinct chip without
 // requiring real portraits in the repo. Replace with real photos when ready.
 const DOCTOR_TINTS = [
-  { ring: "#b73026", ink: "#8e1f17", bg: "#fff1f0" },
+  { ring: "#7d7635", ink: "#5e5a25", bg: "#fff1f0" },
   { ring: "#7d9070", ink: "#3f5236", bg: "#f1f4ed" },
   { ring: "#1d3a7e", ink: "#0f2455", bg: "#eef2fb" },
 ];
 
 export default function AboutPage() {
   return (
-    <main id="main" className="relative bg-[#fdfaf4] text-[#1a1a1a]">
+    <main id="main" className="relative bg-[#ffffff] text-[#1a1a1a]">
       <FloatingNav phone={CLINIC.phone} />
       <StickyMobileCTA phone={CLINIC.phone} phoneDisplay={CLINIC.phoneDisplay} />
 
       {/* Header band */}
-      <section className="relative bg-[#fdfaf4] overflow-hidden">
-        <div aria-hidden className="drift-x pointer-events-none absolute -top-40 -right-40 w-[420px] h-[420px] rounded-full bg-[#b73026] opacity-[0.07] blur-[120px]" />
+      <section className="relative bg-[#ffffff] overflow-hidden">
+        <div aria-hidden className="drift-x pointer-events-none absolute -top-40 -right-40 w-[420px] h-[420px] rounded-full bg-[#7d7635] opacity-[0.07] blur-[120px]" />
         <SiteHeader />
         <div className="relative px-5 pt-6 pb-14 max-w-3xl mx-auto text-center">
           <Reveal>
-            <p className="text-[#b73026] text-[11px] tracking-[0.25em] uppercase font-bold mb-3">
+            <p className="text-[#7d7635] text-[11px] tracking-[0.25em] uppercase font-bold mb-3">
               About the Clinic
             </p>
             <h1 className="font-display text-[44px] sm:text-[60px] font-black leading-[1.02] tracking-tight">
               The chiropractors{" "}
-              <span className="text-[#b73026] italic">who listen.</span>
+              <span className="text-[#7d7635] italic">who listen.</span>
             </h1>
             <p className="mt-5 text-[#2c2c2c] text-[16px] sm:text-[17px] leading-relaxed max-w-xl mx-auto">
               {CLINIC.name} is a family-run clinic in the heart of Streetsville,
@@ -68,7 +68,7 @@ export default function AboutPage() {
             { value: "Same-week", label: "Most new patients seen within days" },
           ].map((stat) => (
             <li key={stat.label} className="flex flex-col items-center px-2">
-              <div className="font-display text-[30px] sm:text-[36px] font-black text-[#b73026] leading-none">
+              <div className="font-display text-[30px] sm:text-[36px] font-black text-[#7d7635] leading-none">
                 {stat.value}
               </div>
               <div className="mt-2 text-[12px] sm:text-[13px] text-[#2c2c2c] uppercase tracking-wider font-semibold leading-snug max-w-[160px]">
@@ -80,14 +80,14 @@ export default function AboutPage() {
       </section>
 
       {/* Meet the doctors */}
-      <section id="doctors" className="px-5 py-20 bg-[#fdfaf4]">
+      <section id="doctors" className="px-5 py-20 bg-[#ffffff]">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <Reveal>
-            <p className="text-[#b73026] text-[11px] tracking-[0.25em] uppercase font-bold mb-3">
+            <p className="text-[#7d7635] text-[11px] tracking-[0.25em] uppercase font-bold mb-3">
               Meet the Doctors
             </p>
             <h2 className="font-display text-[36px] sm:text-[44px] font-black leading-tight tracking-tight">
-              The <span className="text-[#b73026] italic">Sinclair</span> family.
+              The <span className="text-[#7d7635] italic">Sinclair</span> family.
             </h2>
             <p className="mt-4 text-[#2c2c2c] text-[15px] leading-relaxed max-w-md mx-auto">
               Three chiropractors. One clinic. Different strengths, same
@@ -128,7 +128,7 @@ export default function AboutPage() {
                   </p>
                   <Link
                     href="/#book"
-                    className="mt-5 inline-flex items-center gap-1.5 text-[#b73026] font-bold text-sm hover:gap-2 transition-all"
+                    className="mt-5 inline-flex items-center gap-1.5 text-[#7d7635] font-bold text-sm hover:gap-2 transition-all"
                   >
                     Book with {doc.short} <ChevronRight size={16} />
                   </Link>
@@ -140,7 +140,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission band */}
-      <section className="px-5 py-16 bg-[#b73026] text-white relative overflow-hidden">
+      <section className="px-5 py-16 bg-[#7d7635] text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
           <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-white blur-3xl" />
         </div>
@@ -164,12 +164,12 @@ export default function AboutPage() {
       {awards.length > 0 && (
         <section
           id="awards"
-          className="relative bg-[#f5efe2] px-5 pt-16 pb-20 border-y border-black/5"
+          className="relative bg-[#f4f1ea] px-5 pt-16 pb-20 border-y border-black/5"
         >
           <div className="max-w-6xl mx-auto">
             <Reveal>
               <div className="text-center mb-10">
-                <p className="text-[#b73026] text-[11px] tracking-[0.25em] uppercase font-bold mb-2">
+                <p className="text-[#7d7635] text-[11px] tracking-[0.25em] uppercase font-bold mb-2">
                   Recognized &amp; Awarded
                 </p>
                 <h2 className="font-display text-[28px] sm:text-[34px] font-black leading-tight tracking-tight">
@@ -189,11 +189,11 @@ export default function AboutPage() {
       )}
 
       {/* The clinic */}
-      <section className="px-5 py-20 bg-[#fdfaf4]">
+      <section className="px-5 py-20 bg-[#ffffff]">
         <div className="max-w-3xl mx-auto">
           <Reveal>
             <div className="text-center mb-10">
-              <p className="text-[#b73026] text-[11px] tracking-[0.25em] uppercase font-bold mb-3">
+              <p className="text-[#7d7635] text-[11px] tracking-[0.25em] uppercase font-bold mb-3">
                 Inside the Clinic
               </p>
               <h2 className="font-display text-[32px] sm:text-[38px] font-black leading-tight tracking-tight">
@@ -202,7 +202,7 @@ export default function AboutPage() {
             </div>
           </Reveal>
           <Reveal delay={150}>
-            <div className="rounded-[28px] overflow-hidden aspect-[16/10] relative ring-1 ring-black/5 shadow-xl bg-[#f5efe2]">
+            <div className="rounded-[28px] overflow-hidden aspect-[16/10] relative ring-1 ring-black/5 shadow-xl bg-[#f4f1ea]">
               <Image
                 src="/images/clinic-welcome.png"
                 alt={`Welcome to ${CLINIC.name} in Streetsville`}
@@ -218,7 +218,7 @@ export default function AboutPage() {
             <div className="mt-8 text-center">
               <Link
                 href="/#contact"
-                className="inline-flex items-center gap-1.5 text-[#b73026] font-bold text-sm hover:gap-2 transition-all"
+                className="inline-flex items-center gap-1.5 text-[#7d7635] font-bold text-sm hover:gap-2 transition-all"
               >
                 Get directions to the clinic
                 <ChevronRight size={16} />
@@ -241,7 +241,7 @@ export default function AboutPage() {
           <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
             <Link
               href="/#book"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#b73026] text-white px-7 py-4 font-bold text-[15px] hover:bg-[#8e1f17] transition-colors shadow-lg shadow-[#b73026]/20"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#7d7635] text-white px-7 py-4 font-bold text-[15px] hover:bg-[#5e5a25] transition-colors shadow-lg shadow-[#7d7635]/20"
             >
               <Calendar size={16} />
               Book Free Consultation

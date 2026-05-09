@@ -29,7 +29,7 @@ export default async function OG() {
               width: 64,
               height: 64,
               borderRadius: 999,
-              background: "#b73026",
+              background: "#7d7635",
               color: "white",
               display: "flex",
               alignItems: "center",
@@ -51,7 +51,7 @@ export default async function OG() {
             <div
               style={{
                 fontSize: 13,
-                color: "#f2a93b",
+                color: "#c9a951",
                 fontWeight: 700,
                 letterSpacing: "0.32em",
                 marginTop: 4,
@@ -74,7 +74,7 @@ export default async function OG() {
           <div
             style={{
               fontSize: 28,
-              color: "#f2a93b",
+              color: "#c9a951",
               fontWeight: 700,
               letterSpacing: "0.18em",
               textTransform: "uppercase",
@@ -92,7 +92,7 @@ export default async function OG() {
             }}
           >
             The chiropractors{" "}
-            <span style={{ color: "#f2a93b" }}>who listen.</span>
+            <span style={{ color: "#c9a951" }}>who listen.</span>
           </div>
           <div
             style={{
@@ -116,7 +116,7 @@ export default async function OG() {
             width: 380,
             height: 380,
             borderRadius: 999,
-            background: "#b73026",
+            background: "#7d7635",
             opacity: 0.35,
             filter: "blur(80px)",
           }}

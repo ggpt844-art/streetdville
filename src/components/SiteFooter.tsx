@@ -15,7 +15,7 @@ export default function SiteFooter() {
       className="px-5 pt-20 pb-10 bg-[#1a1a1a] text-white"
     >
       <div className="max-w-md mx-auto">
-        <p className="text-[#fdfaf4] text-[11px] tracking-[0.25em] uppercase font-bold mb-3 text-center">
+        <p className="text-[#ffffff] text-[11px] tracking-[0.25em] uppercase font-bold mb-3 text-center">
           Visit Us
         </p>
         <h2 className="font-display text-[34px] font-black leading-[1.05] tracking-tight text-center">
@@ -28,7 +28,7 @@ export default function SiteFooter() {
             href={`tel:${CLINIC.phone}`}
             className="flex items-center gap-4 rounded-2xl bg-white/5 ring-1 ring-white/10 px-5 py-4 hover:bg-white/10 transition-colors"
           >
-            <span className="grid place-items-center w-11 h-11 rounded-full bg-[#b73026]">
+            <span className="grid place-items-center w-11 h-11 rounded-full bg-[#7d7635]">
               <Phone size={18} />
             </span>
             <div>
@@ -42,7 +42,7 @@ export default function SiteFooter() {
             href={`mailto:${CLINIC.email}`}
             className="flex items-center gap-4 rounded-2xl bg-white/5 ring-1 ring-white/10 px-5 py-4 hover:bg-white/10 transition-colors"
           >
-            <span className="grid place-items-center w-11 h-11 rounded-full bg-[#b73026]">
+            <span className="grid place-items-center w-11 h-11 rounded-full bg-[#7d7635]">
               <Mail size={18} />
             </span>
             <div>
@@ -58,7 +58,7 @@ export default function SiteFooter() {
             rel="noopener noreferrer"
             className="flex items-start gap-4 rounded-2xl bg-white/5 ring-1 ring-white/10 px-5 py-4 hover:bg-white/10 transition-colors"
           >
-            <span className="grid place-items-center w-11 h-11 rounded-full bg-[#b73026]">
+            <span className="grid place-items-center w-11 h-11 rounded-full bg-[#7d7635]">
               <MapPin size={18} />
             </span>
             <div>
@@ -92,13 +92,13 @@ export default function SiteFooter() {
               className="absolute inset-0 w-full h-full border-0"
               allowFullScreen
             />
-            <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-[#b73026]/10 rounded-3xl" />
+            <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-[#7d7635]/10 rounded-3xl" />
           </div>
           <a
             href={`https://maps.google.com/?q=${encodeURIComponent(CLINIC.mapsQuery)}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-3 inline-flex items-center gap-1.5 text-[#fdfaf4] text-sm font-semibold hover:gap-2 hover:text-white transition-all"
+            className="mt-3 inline-flex items-center gap-1.5 text-[#ffffff] text-sm font-semibold hover:gap-2 hover:text-white transition-all"
           >
             Get directions
             <ChevronRight size={16} />
@@ -107,7 +107,7 @@ export default function SiteFooter() {
 
         {/* Hours */}
         <div className="mt-8 rounded-3xl bg-white/5 ring-1 ring-white/10 p-6">
-          <div className="flex items-center gap-2 mb-4 text-[#fdfaf4]">
+          <div className="flex items-center gap-2 mb-4 text-[#ffffff]">
             <Clock size={16} />
             <h3 className="font-bold uppercase tracking-wider text-sm">
               Office Hours
@@ -139,7 +139,7 @@ export default function SiteFooter() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="grid place-items-center w-11 h-11 rounded-full bg-white/5 ring-1 ring-white/10 hover:bg-[#b73026] hover:text-white transition-colors"
+            className="grid place-items-center w-11 h-11 rounded-full bg-white/5 ring-1 ring-white/10 hover:bg-[#7d7635] hover:text-white transition-colors"
           >
             <InstagramIcon />
           </a>
@@ -148,7 +148,7 @@ export default function SiteFooter() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
-            className="grid place-items-center w-11 h-11 rounded-full bg-white/5 ring-1 ring-white/10 hover:bg-[#b73026] hover:text-white transition-colors"
+            className="grid place-items-center w-11 h-11 rounded-full bg-white/5 ring-1 ring-white/10 hover:bg-[#7d7635] hover:text-white transition-colors"
           >
             <FacebookIcon />
           </a>
@@ -157,7 +157,7 @@ export default function SiteFooter() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Google Maps"
-            className="grid place-items-center w-11 h-11 rounded-full bg-white/5 ring-1 ring-white/10 hover:bg-[#b73026] hover:text-white transition-colors"
+            className="grid place-items-center w-11 h-11 rounded-full bg-white/5 ring-1 ring-white/10 hover:bg-[#7d7635] hover:text-white transition-colors"
           >
             <GoogleIcon />
           </a>

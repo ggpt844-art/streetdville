@@ -49,7 +49,7 @@ export default function SpineDiagram({ className = "" }: { className?: string })
       {/* Spine */}
       <path
         d="M300 30 C 280 130, 320 220, 300 310 C 280 380, 318 450, 300 510"
-        stroke="#b73026"
+        stroke="#7d7635"
         strokeWidth="6"
         strokeLinecap="round"
         fill="none"
@@ -62,8 +62,8 @@ export default function SpineDiagram({ className = "" }: { className?: string })
           cx={d.x}
           cy={d.y}
           r="9"
-          fill="#fdfaf4"
-          stroke="#b73026"
+          fill="#ffffff"
+          stroke="#7d7635"
           strokeWidth="2.5"
         />
       ))}
@@ -85,7 +85,7 @@ export default function SpineDiagram({ className = "" }: { className?: string })
               strokeWidth="1.5"
               strokeDasharray="3 3"
             />
-            <circle cx={endX} cy={s.y} r="3" fill="#b73026" />
+            <circle cx={endX} cy={s.y} r="3" fill="#7d7635" />
             <text
               x={textX}
               y={s.y - 4}

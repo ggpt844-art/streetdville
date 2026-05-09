@@ -11,7 +11,7 @@ export default function Icon() {
         style={{
           width: "100%",
           height: "100%",
-          background: "#b73026",
+          background: "#7d7635",
           color: "white",
           display: "flex",
           alignItems: "center",

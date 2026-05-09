@@ -23,7 +23,7 @@ export default function SiteHeader() {
           <div className="font-black tracking-wide text-[15px] text-[#1a1a1a]">
             STREETSVILLE
           </div>
-          <div className="text-[#b73026] text-[9px] tracking-[0.3em] font-bold mt-0.5">
+          <div className="text-[#7d7635] text-[9px] tracking-[0.3em] font-bold mt-0.5">
             CHIROPRACTIC
           </div>
           <div className="text-[#2c2c2c] text-[8px] tracking-wider mt-0.5">
@@ -38,7 +38,7 @@ export default function SiteHeader() {
           <Link
             key={l.label}
             href={l.href}
-            className="hover:text-[#b73026] transition-colors"
+            className="hover:text-[#7d7635] transition-colors"
           >
             {l.label}
           </Link>
@@ -49,13 +49,13 @@ export default function SiteHeader() {
         <a
           href={`mailto:${CLINIC.email}`}
           aria-label="Email Streetsville Chiropractic"
-          className="hidden md:inline-grid place-items-center w-10 h-10 rounded-full bg-[#1a1a1a] text-white hover:bg-[#b73026] transition-colors"
+          className="hidden md:inline-grid place-items-center w-10 h-10 rounded-full bg-[#1a1a1a] text-white hover:bg-[#7d7635] transition-colors"
         >
           <Mail size={18} />
         </a>
         <Link
           href="/#book"
-          className="hidden sm:inline-flex rounded-full bg-[#b73026] text-white px-5 py-2.5 text-sm font-bold hover:bg-[#8e1f17] transition-colors items-center gap-2 shadow-md shadow-[#b73026]/20"
+          className="hidden sm:inline-flex rounded-full bg-[#7d7635] text-white px-5 py-2.5 text-sm font-bold hover:bg-[#5e5a25] transition-colors items-center gap-2 shadow-md shadow-[#7d7635]/20"
         >
           <Calendar size={15} />
           Book Now

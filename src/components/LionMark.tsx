@@ -48,7 +48,7 @@ export default function LionMark({
           >
             STREETSVILLE
           </span>
-          <span className="block text-[#b73026] text-[8.5px] font-bold tracking-[0.32em]">
+          <span className="block text-[#7d7635] text-[8.5px] font-bold tracking-[0.32em]">
             CHIROPRACTIC
           </span>
         </span>

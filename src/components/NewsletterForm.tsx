@@ -23,12 +23,12 @@ export default function NewsletterForm() {
           required
           disabled={submitted}
           placeholder="you@email.com"
-          className="flex-1 rounded-full bg-white border border-black/10 px-5 py-3.5 text-[15px] text-[#1a1a1a] placeholder:text-[#4a4a4a]/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b73026] disabled:opacity-60"
+          className="flex-1 rounded-full bg-white border border-black/10 px-5 py-3.5 text-[15px] text-[#1a1a1a] placeholder:text-[#4a4a4a]/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7d7635] disabled:opacity-60"
         />
         <button
           type="submit"
           disabled={submitted}
-          className="rounded-full bg-[#b73026] text-white px-6 py-3.5 font-bold text-[14px] hover:bg-[#8e1f17] transition-colors inline-flex items-center justify-center gap-2 disabled:bg-[#7d9070]"
+          className="rounded-full bg-[#7d7635] text-white px-6 py-3.5 font-bold text-[14px] hover:bg-[#5e5a25] transition-colors inline-flex items-center justify-center gap-2 disabled:bg-[#7d9070]"
         >
           {submitted ? (
             <>

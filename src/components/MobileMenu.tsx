@@ -32,14 +32,14 @@ export default function MobileMenu({ phone, phoneDisplay, email }: Props) {
         onClick={() => setOpen(true)}
         aria-label="Open menu"
         aria-expanded={open}
-        className="grid place-items-center w-11 h-11 rounded-full hover:bg-[#1a1a1a]/5 text-[#1a1a1a] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b73026]"
+        className="grid place-items-center w-11 h-11 rounded-full hover:bg-[#1a1a1a]/5 text-[#1a1a1a] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7d7635]"
       >
         <Menu size={26} />
       </button>
 
       {open && (
         <div
-          className="fixed inset-0 z-50 bg-[#fdfaf4] flex flex-col p-6 overflow-y-auto"
+          className="fixed inset-0 z-50 bg-[#ffffff] flex flex-col p-6 overflow-y-auto"
           role="dialog"
           aria-modal="true"
           aria-label="Navigation menu"
@@ -49,7 +49,7 @@ export default function MobileMenu({ phone, phoneDisplay, email }: Props) {
             <button
               onClick={() => setOpen(false)}
               aria-label="Close menu"
-              className="grid place-items-center w-11 h-11 rounded-full bg-[#1a1a1a]/5 hover:bg-[#1a1a1a]/10 text-[#1a1a1a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b73026]"
+              className="grid place-items-center w-11 h-11 rounded-full bg-[#1a1a1a]/5 hover:bg-[#1a1a1a]/10 text-[#1a1a1a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7d7635]"
             >
               <X size={24} />
             </button>
@@ -60,11 +60,11 @@ export default function MobileMenu({ phone, phoneDisplay, email }: Props) {
                 key={link.label}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="py-3.5 text-2xl font-semibold text-[#1a1a1a]/90 hover:text-[#b73026] transition-colors border-b border-black/10 flex items-center justify-between"
+                className="py-3.5 text-2xl font-semibold text-[#1a1a1a]/90 hover:text-[#7d7635] transition-colors border-b border-black/10 flex items-center justify-between"
               >
                 <span>{link.label}</span>
                 {link.tag && (
-                  <span className="text-[10px] text-[#b73026] bg-[#b73026]/10 px-2 py-0.5 rounded-full uppercase tracking-wider font-bold">
+                  <span className="text-[10px] text-[#7d7635] bg-[#7d7635]/10 px-2 py-0.5 rounded-full uppercase tracking-wider font-bold">
                     {link.tag}
                   </span>
                 )}
@@ -75,7 +75,7 @@ export default function MobileMenu({ phone, phoneDisplay, email }: Props) {
             <a
               href={`tel:${phone}`}
               onClick={() => setOpen(false)}
-              className="rounded-full bg-[#b73026] text-white px-6 py-4 text-base font-bold flex items-center justify-center gap-2 shadow-lg shadow-[#b73026]/20"
+              className="rounded-full bg-[#7d7635] text-white px-6 py-4 text-base font-bold flex items-center justify-center gap-2 shadow-lg shadow-[#7d7635]/20"
             >
               <Phone size={18} />
               {phoneDisplay}

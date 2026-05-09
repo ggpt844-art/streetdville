@@ -132,7 +132,7 @@ export const reviews = [
     body: "After decades of lower back pain, I found relief within weeks of decompression therapy at Streetsville Chiropractic. The staff are caring and professional — this place truly changed my life.",
     reviewCount: 5,
     localGuide: false,
-    avatarColor: "#b73026",
+    avatarColor: "#7d7635",
   },
   {
     name: "Prasath M.",
@@ -141,7 +141,7 @@ export const reviews = [
     body: "A very friendly environment. Dr. Morgan patiently listens to your concerns and takes time to explain your health. Highly recommended clinic, very friendly and happy staff.",
     reviewCount: 8,
     localGuide: false,
-    avatarColor: "#f2a93b",
+    avatarColor: "#c9a951",
   },
 ];
 

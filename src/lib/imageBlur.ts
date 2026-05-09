@@ -2,7 +2,7 @@
  * Tiny cream-tinted SVG used as a blurDataURL for next/image.
  * Decodes to:
  *   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
- *     <rect width="8" height="8" fill="#f5efe2"/>
+ *     <rect width="8" height="8" fill="#f4f1ea"/>
  *   </svg>
  */
 export const IMAGE_BLUR =
